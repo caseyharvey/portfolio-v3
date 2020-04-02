@@ -7,7 +7,7 @@ function Nav() {
   return (
     <nav>
       <Scrollspy
-        items={['about', 'projects', 'contact']}
+        items={['home', 'about', 'projects', 'contact', 'footer']}
         currentClassName="is-current"
       >
         <li>

@@ -29,7 +29,9 @@ nav {
     }
   }
 }
-
+.is-current {
+  background-color: p.$accent-two;
+}
 @media screen and (min-width: p.$breakpoint) {
   nav {
     width: calc((100vw - #{p.$max-width}) / 2);
