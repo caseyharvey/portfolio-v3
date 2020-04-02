@@ -1,0 +1,29 @@
+nav {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 1.5rem;
+  position: fixed;
+  ul {
+    padding: 0;
+    width: 100vh;
+    display: flex;
+    transform-origin: left;
+    transform: rotate(90deg);
+    justify-content: flex-end;
+    margin: -0.75rem 0 0 0.75rem;
+    li {
+      width: 27%;
+      height: 100%;
+      display: flex;
+      list-style: none;
+      justify-content: flex-end;
+      transform: rotate(180deg);
+      a {
+        padding-right: 0.5rem;
+        color: darkslategray;
+        text-decoration: none;
+      }
+    }
+  }
+}
