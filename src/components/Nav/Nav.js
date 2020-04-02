@@ -11,6 +11,9 @@ function Nav() {
         currentClassName="is-current"
       >
         <li>
+          <a href="#home">o</a>
+        </li>
+        <li>
           <a href="#about">about</a>
         </li>
         <li>
@@ -18,6 +21,9 @@ function Nav() {
         </li>
         <li>
           <a href="#contact">contact</a>
+        </li>
+        <li>
+          <a href="#footer">o</a>
         </li>
       </Scrollspy>
     </nav>
