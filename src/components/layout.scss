@@ -1,0 +1,15 @@
+@use './partials.scss' as p;
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+body {
+  margin: 0;
+  font-size: 18px;
+  font-family: 'Quicksand', sans-serif;
+
+  main {
+    margin: 0 auto;
+    position: relative;
+    max-width: p.$max-width;
+    padding: 0.5rem 0 0 1.7rem;
+  }
+}

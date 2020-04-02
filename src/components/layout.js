@@ -1,5 +1,7 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from 'react'
+import PropTypes from 'prop-types'
+
+import './layout.scss'
 // import { useStaticQuery, graphql } from "gatsby"
 
 const Layout = ({ children }) => {
@@ -15,10 +17,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <div>
-        <main>{children}</main>
-        <footer></footer>
-      </div>
+      <main>{children}</main>
     </>
   )
 }
