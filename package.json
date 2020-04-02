@@ -27,7 +27,8 @@
     "react-scrollspy": "^3.4.2"
   },
   "devDependencies": {
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "sass": "^1.26.3"
   },
   "keywords": [
     "gatsby"
