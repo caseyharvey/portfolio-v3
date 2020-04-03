@@ -11,6 +11,7 @@ import SEO from '../components/seo'
 const IndexPage = () => (
   <Layout>
     <SEO title="caseys.tech | The portfolio of Casey Harvey" />
+
     <Nav />
     <div>
       <Home />
