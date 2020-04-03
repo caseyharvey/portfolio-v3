@@ -10,7 +10,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sass`,
       options: {
-        implementation: require("sass"),
+        implementation: require('sass'),
       },
     },
     {
@@ -21,13 +21,14 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-react-svg",
+      resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {
           include: /images/,
         },
       },
     },
+    `gatsby-plugin-typescript`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -42,7 +43,7 @@ module.exports = {
         icon: `src/images/pink-c-favicon.svg`,
       },
     },
-    "gatsby-plugin-dark-mode",
+    'gatsby-plugin-dark-mode',
     `gatsby-plugin-sitemap`,
   ],
 }

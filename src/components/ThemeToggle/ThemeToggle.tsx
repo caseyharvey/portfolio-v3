@@ -1,10 +1,15 @@
 import React from 'react'
 import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 
-function ThemeToggle() {
+interface Props {
+  theme: string
+  toggleTheme: (theme: string) => string
+}
+
+const ThemeToggle: React.FC = () => {
   return (
     <ThemeToggler>
-      {({ theme, toggleTheme }) => (
+      {({ theme, toggleTheme }: Props) => (
         <div className="switch-container">
           <label className="switch">
             <input
