@@ -5,12 +5,65 @@ body {
   margin: 0;
   font-size: 18px;
   font-family: 'Quicksand', sans-serif;
-  background-color: rgb(247, 247, 247);
 
   main {
     margin: 0 auto;
     position: relative;
     max-width: p.$max-width;
-    padding: 0.5rem 0 0 1.7rem;
+    padding: 0.5rem 0 0 2rem;
+  }
+}
+
+.light {
+  background-color: p.$section-light;
+  color: p.$text-light;
+  nav {
+    .switch {
+      .slider {
+        background-color: p.$bg-light;
+        &:before {
+          background-color: p.$accent-one-light;
+        }
+      }
+    }
+    ul {
+      li {
+        a {
+          color: p.$accent-one-light;
+        }
+      }
+    }
+  }
+  .is-current {
+    a {
+      color: p.$accent-two-light;
+    }
+  }
+}
+
+.dark {
+  background-color: p.$section;
+  color: p.$text;
+  nav {
+    .switch {
+      .slider {
+        background-color: p.$bg;
+        &:before {
+          background-color: p.$accent-one;
+        }
+      }
+    }
+    ul {
+      li {
+        a {
+          color: p.$accent-one;
+        }
+      }
+    }
+  }
+  .is-current {
+    a {
+      color: p.$accent-two;
+    }
   }
 }
