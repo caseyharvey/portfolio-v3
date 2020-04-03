@@ -1,4 +1,5 @@
 @use './partials.scss' as p;
+
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 
 body {
@@ -36,7 +37,7 @@ body {
   }
   .is-current {
     a {
-      color: p.$accent-two-light;
+      color: darken(p.$accent-two-light, 20%);
     }
   }
 }
