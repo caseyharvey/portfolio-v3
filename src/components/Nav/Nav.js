@@ -1,17 +1,23 @@
 import React from 'react'
 import Scrollspy from 'react-scrollspy'
+import UpArrow from '../../images/up-arrow.svg'
+import DownArrow from '../../images/down-arrow.svg'
+import ThemeToggle from '../ThemeToggle/ThemeToggle'
 
 import './nav.scss'
 
 function Nav() {
   return (
     <nav>
+      <ThemeToggle />
       <Scrollspy
         items={['home', 'about', 'projects', 'contact', 'footer']}
         currentClassName="is-current"
       >
-        <li>
-          <a href="#home">o</a>
+        <li className="arrows">
+          <a href="#home">
+            <UpArrow />
+          </a>
         </li>
         <li>
           <a href="#about">about</a>
@@ -22,8 +28,10 @@ function Nav() {
         <li>
           <a href="#contact">contact</a>
         </li>
-        <li>
-          <a href="#footer">o</a>
+        <li className="arrows">
+          <a href="#footer">
+            <DownArrow />
+          </a>
         </li>
       </Scrollspy>
     </nav>
