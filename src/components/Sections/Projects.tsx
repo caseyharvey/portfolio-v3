@@ -1,7 +1,5 @@
 import React from 'react'
 
-import './sections.scss'
-
 function Projects() {
   return (
     <section id="projects">

@@ -1,11 +1,14 @@
 import React from 'react'
 
-import './sections.scss'
+// import ContactForm from '../ContactForm/ContactForm'
 
 function Contact() {
   return (
     <section id="contact">
-      <div className="section-container">CONTACT SECTION</div>
+      <div className="section-container">
+        {/* <ContactForm /> */}
+        CONTACT SECTION
+      </div>
     </section>
   )
 }

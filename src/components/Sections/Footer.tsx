@@ -1,7 +1,5 @@
 import React from 'react'
 
-import './sections.scss'
-
 function Footer() {
   return (
     <section id="footer">
