@@ -1,11 +1,12 @@
 import React from 'react'
-
-import './sections.scss'
+import Heading from '../Heading/Heading'
 
 function About() {
   return (
     <section id="about">
-      <div className="section-container">ABOUT SECTION</div>
+      <div className="section-container">
+        <Heading heading="About Me" tagLine="Casey Harvey" />
+      </div>
     </section>
   )
 }
