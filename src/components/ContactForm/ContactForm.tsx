@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import './contact-form.scss'
 import axios from 'axios'
 import { useForm } from 'react-hook-form'
 
@@ -84,7 +84,7 @@ const ContactForm: React.FC = () => {
           <span className="error">please enter a valid email</span>
         )}
         <textarea
-          rows={4}
+          rows={8}
           name="message"
           autoCorrect="off"
           autoComplete="off"

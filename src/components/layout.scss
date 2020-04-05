@@ -11,7 +11,7 @@ body {
     margin: 0 auto;
     position: relative;
     max-width: p.$max-width;
-    padding: 0.5rem 0 0 2rem;
+    padding: 0.5rem 0 0 3rem;
 
     .section-container {
       width: 100%;
@@ -59,8 +59,63 @@ body {
           color: p.$accent-two;
         }
       }
+
       span {
-        color: lighten(p.$accent-two, 10%);
+        color: lighten(p.$accent-two, 8%);
+      }
+      .links-container {
+        a,
+        .copy-email {
+          color: p.$accent-one;
+          background-color: p.$section;
+          border: 2px solid p.$border;
+          &:hover {
+            border: 2px solid p.$accent-one;
+          }
+        }
+        .success {
+          color: p.$accent-one;
+
+          background-color: p.$section;
+          border: 2px solid p.$accent-one;
+        }
+      }
+      .form-container {
+        .info-text {
+          color: p.$border;
+          background-color: lighten(p.$section, 5%);
+        }
+        form {
+          input,
+          textarea {
+            color: p.$accent-one;
+            background-color: p.$section;
+            border: 2px solid p.$border;
+            &:focus {
+              border: 2px solid p.$accent-one;
+              background-color: p.$section;
+            }
+
+            &::placeholder {
+              color: p.$border;
+            }
+          }
+          .submit {
+            color: p.$accent-one;
+            border: 2px solid p.$border;
+            background-color: p.$section;
+
+            &:hover {
+              border: 2px solid p.$accent-one;
+            }
+          }
+          .error {
+            color: p.$warning;
+          }
+          .msg-sent {
+            color: p.$accent-one;
+          }
+        }
       }
     }
   }
