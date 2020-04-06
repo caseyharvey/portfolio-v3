@@ -1,0 +1,92 @@
+@import './partials.sass'
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap')
+
+body 
+  margin: 0
+  font-size: 18px
+  font-family: 'Quicksand', sans-serif
+
+  main 
+    margin: 0 auto
+    position: relative
+    max-width: $max-width
+    padding: 0.5rem 0 0 3rem
+
+    .section-container 
+      width: 100%
+      padding: 1rem
+      min-height: 100vh
+      text-align: right
+      margin-bottom: 1rem
+      box-sizing: border-box
+    
+  
+.dark 
+  background-color: $section
+  color: $text
+  nav 
+    .switch 
+      .slider 
+        background-color: $bg
+        &:before 
+          background-color: $accent-one  
+    ul 
+      li
+        a 
+          color: $accent-one   
+  .is-current 
+    a 
+      color: $accent-two
+    
+  main 
+    .section-container 
+      .heading-container 
+        h1 
+          color: $accent-one    
+        span 
+          color: $accent-two
+
+      span 
+        color: lighten($accent-two, 8%)
+      
+      .links-container 
+        a,
+        .copy-email 
+          color: $accent-one
+          background-color: $section
+          border: 2px solid $border
+          &:hover 
+            border: 2px solid $accent-one
+        .success 
+          color: $accent-one
+          background-color: $section
+          border: 2px solid $accent-one
+      
+      .form-container 
+        .info-text 
+          color: $border
+          background-color: lighten($section, 5%)
+        form 
+          input,
+          textarea 
+            color: $accent-one
+            background-color: $section
+            border: 2px solid $border
+            &:focus 
+              border: 2px solid $accent-one
+              background-color: $section
+            &::placeholder 
+              color: $border
+          .submit 
+            color: $accent-one
+            border: 2px solid $border
+            background-color: $section
+            &:hover 
+              border: 2px solid $accent-one
+          .error 
+            color: $warning
+          .msg-sent 
+            color: $accent-one
+          
+        

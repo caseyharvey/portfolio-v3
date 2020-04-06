@@ -1,5 +1,5 @@
 import React from 'react'
-import './heading.scss'
+import './heading.sass'
 
 interface Props {
   heading: string

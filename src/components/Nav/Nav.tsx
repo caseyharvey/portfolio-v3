@@ -4,7 +4,7 @@ import UpArrow from '../../images/up-arrow.svg'
 import DownArrow from '../../images/down-arrow.svg'
 import ThemeToggle from '../ThemeToggle/ThemeToggle'
 
-import './nav.scss'
+import './nav.sass'
 
 function Nav() {
   return (

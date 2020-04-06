@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react'
-import './Links.scss'
+import './Links.sass'
 
 const EmailLinks: React.FC = () => {
   const [emailCopied, setEmailCopied] = useState<boolean>(false)

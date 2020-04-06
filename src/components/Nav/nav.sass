@@ -1,0 +1,105 @@
+@import '../partials.sass'
+
+nav 
+  top: 0
+  left: 0
+  bottom: 0
+  width: 1.7rem
+  position: fixed
+
+  .switch-container 
+    display: flex
+    justify-content: flex-end
+    margin: 0.5rem 0 0.5rem 0.2rem
+
+    input 
+      opacity: 0
+      width: 0
+      height: 0
+      &:checked + .slider:before 
+        transform: translateY(26px)
+      
+    .switch 
+      height: 51px
+      width: 1.5rem
+      position: relative
+
+      .slider 
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        cursor: pointer
+        position: absolute
+        transition: 0.2s
+        border-radius: 42px
+        &:before 
+          position: absolute
+          content: ''
+          height: 18px
+          width: 18px
+          left: 3px
+          top: 3px
+          transition: 0.2s
+          border-radius: 50%
+        
+  ul 
+    padding: 0
+    width: calc(100vh - 60px)
+    display: flex
+    transform-origin: left
+    transform: rotate(90deg)
+    justify-content: space-evenly
+    margin: -0.75rem 0 0 0.75rem
+
+    .arrows 
+      width: 1rem
+      display: flex
+      justify-content: flex-end
+      transform: rotate(-90deg)
+      a 
+        padding: 0
+        width: 0.7rem
+        fill: currentColor
+      
+    li 
+      height: 100%
+      display: flex
+      list-style: none
+      justify-content: center
+      transform: rotate(180deg)
+      a 
+        padding-bottom: 0.1rem
+        text-decoration: none
+      
+.is-current 
+  a 
+    transform: scale(1.1)
+    transition: 200ms
+  
+@media screen and (min-width: $breakpoint) 
+  nav 
+    width: calc((100vw - #{$max-width}) / 2)
+
+    ul 
+      width: 100%
+      height: calc(100vh - 60px)
+      flex-direction: column
+      transform: rotate(0deg)
+
+      .arrows 
+        width: auto
+        display: flex
+        transform: rotate(0deg)
+        justify-content: flex-end
+        a 
+          padding-right: 1.2rem
+          width: 0.7rem
+
+      li 
+        width: 100%
+        align-items: center
+        transform: rotate(0deg)
+        justify-content: flex-end
+        a 
+          padding-right: 0.7rem
