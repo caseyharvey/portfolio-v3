@@ -9,7 +9,7 @@ interface Props {
 
 const Links: React.FC<Props> = ({ linkOne, linkTwo, textOne, textTwo }) => {
   return (
-    <div className="links-container">
+    <div className="link-container">
       <a href={linkOne} target="_blank" rel="noopener noreferrer">
         {textOne}
       </a>
