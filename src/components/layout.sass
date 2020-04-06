@@ -8,10 +8,14 @@ body
   font-family: 'Quicksand', sans-serif
 
   main 
+    width: 100%
+    display: flex
     margin: 0 auto
     position: relative
     max-width: $max-width
-    padding: 0.5rem 0 0 3rem
+    flex-direction: column
+    box-sizing: border-box
+    padding: 0.5rem 0 0 2rem
 
     .section-container 
       width: 100%
@@ -26,18 +30,20 @@ body
   background-color: $section
   color: $text
   nav 
+    background-color: black
     .switch 
       .slider 
         background-color: $bg
         &:before 
           background-color: $accent-one  
-    ul 
-      li
-        a 
-          color: $accent-one   
-  .is-current 
-    a 
-      color: $accent-two
+    .links-container          
+      ul 
+        li
+          a 
+            color: $accent-one   
+        .is-current 
+          a 
+            color: $accent-two
     
   main 
     .section-container 
