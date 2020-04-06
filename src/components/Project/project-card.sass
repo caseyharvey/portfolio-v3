@@ -1,0 +1,24 @@
+%content
+  max-width: 500px
+  box-sizing: border-box  
+
+.project-container
+  width: 100%
+  display: flex
+  padding-top: 1rem
+  align-items: flex-end
+  flex-direction: column
+  
+  .title
+    width: 100%
+    padding: 1rem
+    @extend %content
+    h2
+      margin: .5rem 0
+      @extend %content
+    span
+      @extend %content
+  p
+    padding: 1rem
+    margin-top: 0
+    @extend %content

@@ -1,6 +1,6 @@
-import Heading from '../../components/Heading/Heading'
-import Links from '../../components/Links/Links'
+import Links from '../Links/Links'
 import React from 'react'
+import './project-card.sass'
 
 interface Props {
   id: number
@@ -15,7 +15,10 @@ interface Props {
 const ProjectCard: React.FC<Props> = ({ name, tag, url, git, info }) => {
   return (
     <div className="project-container">
-      <Heading heading={name} tagLine={tag} />
+      <div className="title">
+        <h2>{name}</h2>
+        <span>{tag}</span>
+      </div>
       <Links linkOne={url} textOne="the app" linkTwo={git} textTwo="the code" />
       <p>{info}</p>
     </div>

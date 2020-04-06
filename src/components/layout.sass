@@ -7,7 +7,7 @@ body
   font-size: 18px
   font-family: 'Quicksand', sans-serif
 
-  main 
+  main
     width: 100%
     display: flex
     margin: 0 auto
@@ -15,14 +15,18 @@ body
     max-width: $max-width
     flex-direction: column
     box-sizing: border-box
-    padding: 0.5rem 0 0 2rem
+    padding: 0 0 0 1.5rem  
+
 
     .section-container 
       width: 100%
+      display: flex
       padding: 1rem
-      min-height: 100vh
+      margin: .5rem 0
       text-align: right
-      margin-bottom: 1rem
+      min-height: 100vh
+      align-items: flex-end
+      flex-direction: column
       box-sizing: border-box
     
   
@@ -36,7 +40,7 @@ body
         background-color: $bg
         &:before 
           background-color: $accent-one  
-    .links-container          
+    .nav-container          
       ul 
         li
           a 
@@ -47,16 +51,19 @@ body
     
   main 
     .section-container 
+      border-bottom: 1px solid $accent-two
       .heading-container 
+        background-color: black
         h1 
           color: $accent-one    
         span 
           color: $accent-two
 
       span 
+        background-color: black
         color: lighten($accent-two, 8%)
       
-      .links-container 
+      .link-container 
         a,
         .copy-email 
           color: $accent-one
@@ -68,7 +75,18 @@ body
           color: $accent-one
           background-color: $section
           border: 2px solid $accent-one
-      
+
+      .project-container
+        .title
+          border: 4px solid black
+          h2
+            color: $accent-one
+          span
+            color: $accent-two
+        p
+          background-color: black
+          color: lighten($accent-two, 13%)
+
       .form-container 
         .info-text 
           color: $border
