@@ -1,0 +1,95 @@
+.dark 
+  background-color: $bg
+  color: $text
+  nav 
+    background-color: $section
+    // border-right: 2px solid $border
+    .switch 
+      .slider 
+        background-color: $bg
+        &:before 
+          background-color: $accent-one  
+    .nav-container          
+      ul 
+        li
+          a 
+            color: $accent-one   
+        .is-current 
+          a 
+            color: $accent-two
+    
+  main 
+    .section-container 
+      .heading-container 
+        background-color: $section
+        h1 
+          color: $accent-one    
+        span 
+          color: $accent-two
+
+      span 
+
+        color: lighten($accent-two, 8%)
+      
+      .about-container          
+          .title
+            border: 4px solid $section
+            h2
+              color: $accent-one
+            span
+              color: $accent-two
+          .text
+            background-color: $section
+
+      .link-container,.email-link-container
+        a,
+        .copy-email 
+          color: $accent-one
+          background-color: $section
+          border: 2px solid $border
+          &:hover 
+            border: 2px solid $accent-one
+        .success 
+          color: $accent-one
+          background-color: $section
+          border: 2px solid $accent-one
+
+      .project-container
+        .title
+          border: 4px solid $section
+          h2
+            color: $accent-one
+          span
+            color: $accent-two
+        p
+          background-color: $section
+          color: lighten($accent-two, 13%)
+
+      .form-container 
+        .info-text 
+          color: $border
+          background-color: $section
+        form 
+          input,
+          textarea 
+            color: $accent-one
+            background-color: $section
+            border: 2px solid $border
+            &:focus 
+              border: 2px solid $accent-one
+              background-color: $section
+            &::placeholder 
+              color: $border
+          .submit 
+            color: $accent-one
+            border: 2px solid $border
+            background-color: $section
+            &:hover 
+              border: 2px solid $accent-one
+          .error 
+            color: $warning
+            background-color: $section
+          .msg-sent 
+            color: $accent-one
+          
+        
