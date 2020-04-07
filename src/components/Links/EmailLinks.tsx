@@ -13,7 +13,7 @@ const EmailLinks: React.FC = () => {
     }
   }
   return (
-    <div className="link-container">
+    <div className="email-link-container">
       <span className="copy-email" onClick={copyEmailToClipboard}>
         copy email
       </span>

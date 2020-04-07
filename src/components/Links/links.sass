@@ -8,9 +8,11 @@
   box-sizing: border-box
   &:hover
     transform: scale(0.992)
-  
 
-.link-container
+.email-link-container
+  margin-top: 0.5rem
+
+.link-container,.email-link-container
   width: 100%
   display: flex
   max-width: 500px
@@ -18,7 +20,6 @@
   align-items: flex-end
   flex-direction: column
   box-sizing: border-box
-  margin: 1rem 0 .5rem 0
   justify-content: space-between
 
   a
@@ -44,7 +45,12 @@
   
 @media screen and (min-width: 425px)
   %link
+    margin: 0
     width: calc( 50% - .25rem)
-  .link-container  
+  .link-container
+    margin: .5rem 0 
+    flex-direction: row
+  .email-link-container
+    margin: .5rem 0 0 0
     flex-direction: row
 
