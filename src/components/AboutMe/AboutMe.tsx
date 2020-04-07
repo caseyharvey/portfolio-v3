@@ -1,5 +1,4 @@
 import React from 'react'
-import './about-me.sass'
 
 interface Props {
   name: string

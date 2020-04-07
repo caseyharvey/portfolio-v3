@@ -1,6 +1,5 @@
 import Links from '../Links/Links'
 import React from 'react'
-import './project-card.sass'
 
 interface Props {
   id: number

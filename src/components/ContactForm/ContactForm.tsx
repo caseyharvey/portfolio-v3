@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import './contact-form.sass'
 import axios from 'axios'
 import { useForm } from 'react-hook-form'
 

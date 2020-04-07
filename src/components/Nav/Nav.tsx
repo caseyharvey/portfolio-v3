@@ -2,8 +2,6 @@ import React from 'react'
 import Scrollspy from 'react-scrollspy'
 import ThemeToggle from '../ThemeToggle/ThemeToggle'
 
-import './nav.sass'
-
 function Nav() {
   return (
     <nav>
