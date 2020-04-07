@@ -6,14 +6,14 @@ nav
   bottom: 0
   display: flex
   position: fixed
-  min-width: 2rem
+  min-width: 2.1rem
   flex-direction: column
   width: calc((100vw - #{$max-width}) / 2)
 
   .switch-container 
     display: flex
     justify-content: flex-end
-    margin: 0.5rem 0.3rem .5rem 0.2rem
+    margin: 0.5rem 0.3rem .5rem 0.3rem
 
     input 
       opacity: 0
@@ -58,13 +58,15 @@ nav
       margin: 0
       padding: 0
       display: flex
-      margin-left: .5rem
+      height: 1.7em
+      align-items: center
       transform: rotate(90deg)
       min-width: calc( 100vh - 140px )
       transform-origin: left bottom
       justify-content: space-between
 
       li 
+        transform: rotate(180deg)
         list-style: none
         text-align: center
         a 
@@ -73,12 +75,14 @@ nav
           text-decoration: none
         
       .is-current  
-        transform: scale(1.1)
+        // transform: scale(1.1)
         transition: 200ms
   
 @media screen and (min-width: $breakpoint) 
   nav 
     .nav-container
+      
       ul 
+        height: 0.8rem
         margin-left: calc((100vw - #{$max-width}) / 2 - 1.7rem)
 
