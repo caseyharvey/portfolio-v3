@@ -1,3 +1,4 @@
+@import '../partials.sass'
 
 .form-container 
   width: 100%
@@ -6,8 +7,8 @@
   position: relative
   align-items: flex-end
   box-sizing: border-box
-  justify-content: space-between
   flex-direction: column
+  justify-content: space-between
   
   .info-text
     width: 100%
@@ -28,10 +29,11 @@
       border: none
       outline: none
       padding: 1rem
-      appearance: none
       font-size: 1.1rem
+      appearance: none
       margin-bottom: 0.5rem
       box-sizing: border-box
+      font-family: 'Quicksand', sans-serif
 
     .contact-message 
       resize: none
@@ -53,5 +55,10 @@
       width: 100%
       text-align: center
     
-  
+@media screen and (min-width: $breakpoint)
+  .form-container 
+    form 
+      input,
+      textarea   
+        font-size: 1.4rem
 
