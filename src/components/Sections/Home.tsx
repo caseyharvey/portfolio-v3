@@ -5,8 +5,11 @@ function Home() {
   return (
     <section id="home">
       <div className="section-container">
-        <Heading heading="Hi there," tagLine="My name's Casey" />
-        <span>Welcome to my portfolio page</span>
+        <Heading
+          heading="Hi there,"
+          tagLine="My name's Casey"
+          info="Welcome to my portfolio page."
+        />
       </div>
     </section>
   )
