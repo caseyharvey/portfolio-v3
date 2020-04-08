@@ -30,7 +30,6 @@
       outline: none
       padding: 1rem
       font-size: 1.1rem
-      appearance: none
       margin-bottom: 0.5rem
       box-sizing: border-box
       font-family: 'Quicksand', sans-serif
@@ -54,7 +53,18 @@
     .msg-sent 
       width: 100%
       text-align: center
-    
+
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox 
+  -webkit-appearance: none
+  border-radius: 0
+
+
+  
 @media screen and (min-width: $breakpoint)
   .form-container 
     form 
