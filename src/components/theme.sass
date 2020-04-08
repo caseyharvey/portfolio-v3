@@ -2,20 +2,20 @@
   background-color: $bg
   color: $text
   nav 
-    background-color: $section
-    .switch 
-      .slider 
-        background-color: $bg
-        &:before 
-          background-color: $accent-one  
-    .nav-container          
-      ul 
-        li
-          a 
-            color: $accent-one   
-        .is-current 
-          a 
-            color: $accent-two
+    background-color: $section         
+    ul 
+      li
+        .switch 
+          .slider 
+            // background-color: darken($border,10%)
+            background-color: lighten($bg,6%)
+            &:before 
+              background-color: $accent-one  
+        a 
+          color: $accent-one   
+      .is-current 
+        a 
+          color: $accent-two
     
   main 
     .section-container 
@@ -69,6 +69,10 @@
           color: $border
           background-color: $section
         form 
+          input:-webkit-autofill,
+          input:-webkit-autofill:hover,
+          input:-webkit-autofill:focus 
+            box-shadow: 0 0 0px 1000px $section inset
           input,
           textarea 
             color: $accent-one
@@ -106,19 +110,15 @@
   color: darken($accent-two-light, 10%)
   nav 
     background-color: $section-light
-    .switch 
-      .slider 
-        background-color: $bg-light
-        &:before 
-          background-color: $accent-one-light  
-    .nav-container          
-      ul 
-        li
-          a 
-            color: $accent-one-light   
-        .is-current 
-          a 
-            color: $accent-two-light
+    ul 
+      li
+        .switch 
+          .slider 
+            background-color: $bg-light
+            &:before 
+              background-color: $accent-one-light
+        a 
+          color: $accent-one-light
     
   main 
     .section-container 
@@ -175,6 +175,10 @@
           color: darken($border-light,20% )
           background-color: $section-light
         form 
+          input:-webkit-autofill,
+          input:-webkit-autofill:hover,
+          input:-webkit-autofill:focus 
+            box-shadow: 0 0 0px 1000px $section-light inset
           input,
           textarea 
             color: $accent-one-light
