@@ -22,7 +22,7 @@ const projectArray = [
   {
     id: 3,
     name: 'caseys.tech 2.0',
-    tagline: 'version 2 of my portfolio',
+    tagline: 'portfolio 2.0',
     url: 'https://v2.caseys.tech/',
     git: 'https://github.com/caseyharvey/v2-caseys.tech/tree/master/src',
     extra: 'react react-hook-form gatsby',
@@ -32,7 +32,7 @@ const projectArray = [
   {
     id: 4,
     name: 'caseys.tech 1.0',
-    tagline: 'version 1 of my portfolio',
+    tagline: 'portfolio 1.0',
     url: 'https://v1.caseys.tech/',
     git: 'https://github.com/caseyharvey/v1-caseys.tech/tree/master/src',
     extra: 'react react-hook-form react-router',
