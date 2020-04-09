@@ -1,20 +1,24 @@
-import ProjectCard from "./ProjectCard"
-import React from "react"
-import projectsArray from "./projectsArray"
+import React from 'react'
+import projectsArray from './projectsArray'
+import ContentBlock from '../ContentBlock/ContentBlock'
 
 const ProjectList: React.FC = () => {
   return (
     <>
       {projectsArray.map(project => (
-        <ProjectCard
+        <ContentBlock
           id={project.id}
           key={project.id}
           name={project.name}
-          tag={project.tag}
-          url={project.url}
-          git={project.git}
-          info={project.info}
-        />
+          tagline={project.tagline}
+          extra={project.extra}
+          linkOne={project.url}
+          linkTwo={project.git}
+          textOne={'the app'}
+          textTwo={'the code'}
+        >
+          <p>{project.info}</p>
+        </ContentBlock>
       ))}
     </>
   )

@@ -1,0 +1,51 @@
+@import '../partials.sass'
+
+%link
+  width: 100%
+  padding: 1rem
+  text-align: right
+  margin: 0 0 0.5rem 0
+  box-sizing: border-box
+  &:hover
+    transform: scale(0.992)
+
+.email-link-container
+  width: 100%
+  display: flex
+  max-width: 500px
+  margin-top: 0.5rem
+  position: relative
+  margin-bottom: 0.5rem
+  align-items: flex-end
+  flex-direction: column
+  box-sizing: border-box
+  justify-content: space-between
+
+  a
+    text-decoration: none
+    @extend %link
+  
+  .copy-email
+    cursor: pointer
+    @extend %link
+  
+  .success
+    top: 0
+    left: 0
+    position: absolute
+    @extend %link
+  
+  .hide
+    left: 0
+    width: 0px
+    opacity: 0
+    height: 0px
+    position: absolute
+  
+@media screen and (min-width: 425px)
+  %link
+    margin: 0
+    width: calc( 50% - .25rem)
+  .email-link-container
+    flex-direction: row
+

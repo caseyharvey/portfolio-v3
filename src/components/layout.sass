@@ -1,11 +1,10 @@
 @import './partials.sass'
 @import './theme.sass'
-@import './AboutMe/about-me.sass'
+@import './ContentBlock/content-block.sass'
 @import './ContactForm/contact-form.sass'
 @import './Heading/heading.sass'
-@import './Links/links.sass'
+@import './EmailLinks/email-links.sass'
 @import './Nav/nav.sass'
-@import './Project/project-card.sass'
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap')
 
 body 
@@ -22,10 +21,15 @@ body
     max-width: $max-width
     flex-direction: column
     box-sizing: border-box  
+    
+    section#home
+      height: 100vh
+      display: flex
+      flex-direction: column
+      justify-content: center
 
     .section-container
       width: 100%
-      min-height: 100vh
       display: flex
       text-align: right
       align-items: flex-end
@@ -34,6 +38,7 @@ body
       justify-content: center
       padding: 2rem .3rem 1rem .5rem
 
+      
 
 @media screen and (min-width: 570px)
   body

@@ -13,9 +13,6 @@
               background-color: $accent-one  
         a 
           color: $accent-one   
-      .is-current 
-        a 
-          color: $accent-two
     
   main 
     .section-container 
@@ -25,24 +22,11 @@
           color: $accent-one    
         span 
           color: $accent-two
-
       span 
-
         color: lighten($accent-two, 8%)
       
-      .about-container          
-          .title
-            border: 4px solid $section
-            h3
-              color: $accent-one
-            span
-              color: $accent-two
-          .text
-            background-color: $section
-
-      .link-container,.email-link-container
-        a,
-        .copy-email 
+      .email-link-container 
+        .copy-email,a
           color: $accent-one
           background-color: $section
           border: 2px solid $border
@@ -53,16 +37,42 @@
           background-color: $section
           border: 2px solid $accent-one
 
-      .project-container
-        .title
-          border: 4px solid $section
-          h3
-            color: $accent-one
-          span
-            color: $accent-two
-        p
+      .block-container
+        border: 4px solid $section
+        .head
+          background-color: lighten($section, 5%)
+          .heading-text
+            h2
+              color: $accent-one
+              a
+                color: $accent-one
+            h4
+              color: $accent-two
+            span
+              color: darken($accent-two, 10%)
+          .avatar
+        .link-container
+          a
+           color: $accent-one
+           background-color: $section
+           border: 2px solid $border
+           &:hover 
+             border: 2px solid $accent-one
+        button
+          color: $accent-one
           background-color: $section
-          color: lighten($accent-two, 13%)
+        .text-container
+          .text
+            background-color: lighten($section, 5% )
+            &::-webkit-scrollbar 
+              width: 6px
+              background-color: $section        
+            &::-webkit-scrollbar-thumb 
+              background-color: $bg
+            &::-webkit-scrollbar-corner
+              background-color: $section
+            p
+              color: lighten($accent-two, 13%)
 
       .form-container 
         .info-text 
@@ -94,16 +104,6 @@
             background-color: $section
           .msg-sent 
             color: $accent-one
-
-    .footer-container
-      a
-        color: $accent-one
-        background-color: $section
-        border: 2px solid $border
-        &:hover
-          border: 2px solid $accent-one
-      
-          
         
 .light 
   background-color: $bg-light
@@ -129,25 +129,12 @@
           color: $accent-one-light    
         span 
           color: $accent-two-light
-
       span 
 
         color: lighten($accent-two-light, 8%)
       
-      .about-container          
-          .title
-            border: 4px solid $section-light
-            background-color: lighten($bg-light, 8%)
-            h3
-              color: $accent-one-light
-            span
-              color: $accent-two-light
-          .text
-            background-color: $section-light
-
-      .link-container,.email-link-container
-        a,
-        .copy-email 
+      .email-link-container
+        .copy-email,a
           color: $accent-one-light
           background-color: lighten($bg-light, 17%)
           border: 2px solid $border-light
@@ -159,17 +146,43 @@
           background-color: $section-light
           border: 2px solid $accent-one-light
 
-      .project-container
-        .title
-          border: 4px solid $section-light
+
+      .block-container
+        border: 4px solid $section-light
+        .head
           background-color: lighten($bg-light, 8%)
-          h3
-            color: $accent-one-light
-          span
-            color: $accent-two-light
-        p
+          .heading-text
+            h2
+              color: $accent-one-light
+              a
+                color: $accent-one-light
+            h4
+              color: $accent-two-light
+            span
+              color: $accent-two-light
+          .avatar
+        .link-container
+          a
+           color: $accent-one-light
+           background-color: $section-light
+           border: 2px solid $border-light
+           &:hover 
+             border: 2px solid $accent-one-light
+        button
+          color: $accent-one-light
           background-color: $section-light
-          color: darken($accent-two-light, 10%)
+        .text-container
+          .text
+            background-color: darken( $section-light, 3%)        
+            &::-webkit-scrollbar 
+              width: 6px
+              background-color: $section-light        
+            &::-webkit-scrollbar-thumb 
+              background-color: $bg-light
+            &::-webkit-scrollbar-corner
+              background-color: $section-light
+            p
+              color: $accent-two-light
 
       .form-container 
         .info-text 
@@ -201,13 +214,5 @@
             background-color: $section-light
           .msg-sent 
             color: $accent-one-light
-    .footer-container
-      a
-        color: $accent-one-light
-        background-color: $section-light
-        border: 2px solid $border-light
-        &:hover
-          border: 2px solid $accent-one-light
-      
           
         
