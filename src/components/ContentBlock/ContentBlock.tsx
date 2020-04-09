@@ -54,7 +54,7 @@ const ContentBlock: React.FC<Props> = ({
             {children}
           </div>
           <button className={isOpen ? '' : 'hide'} onClick={toggleContent}>
-            collapse
+            {isOpen ? 'collapse' : ''}
           </button>
         </div>
       </div>
