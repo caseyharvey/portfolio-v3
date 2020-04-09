@@ -6,7 +6,10 @@ function About() {
   return (
     <section id="about">
       <div className="section-container">
-        <Heading heading="About Me" tagLine="I love to code" />
+        <Heading
+          heading="About Me"
+          tagLine="I'm love learning and building new things"
+        />
         <ContentBlock
           name={
             <a
