@@ -18,7 +18,7 @@ function About() {
             </a>
           }
           tagline="Software developer"
-          extra="react typescript gatsby redux"
+          extra="typescript react and gatsby"
           linkOne="https://github.com/caseyharvey"
           linkTwo="https://www.linkedin.com/in/casey-harvey-b931a71a0/"
           textOne="GitHub"
