@@ -8,7 +8,7 @@ function About() {
       <div className="section-container">
         <Heading
           heading="About Me"
-          tagLine="I'm love learning and building new things"
+          tagLine="I love learning and building new things"
         />
         <ContentBlock
           name={
