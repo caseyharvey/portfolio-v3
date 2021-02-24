@@ -23,7 +23,7 @@ function About() {
           tagline="Software developer"
           extra="typescript react and gatsby"
           linkOne="https://github.com/caseyharvey"
-          linkTwo="https://www.linkedin.com/in/casey-harvey-b931a71a0/"
+          linkTwo="https://www.linkedin.com/in/casey-harvey-a85a72207/"
           textOne="GitHub"
           textTwo="LinkedIn"
         >
