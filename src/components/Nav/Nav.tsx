@@ -20,9 +20,6 @@ function Nav() {
         <li>
           <a href="#contact">contact</a>
         </li>
-        <li>
-          <a href="https://blog.caseys.tech">blog</a>
-        </li>
       </ul>
     </nav>
   )
