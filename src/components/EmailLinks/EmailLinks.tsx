@@ -17,12 +17,12 @@ const EmailLinks: React.FC = () => {
         copy email
       </span>
       <span className={emailCopied ? 'success' : 'hide'}>success</span>
-      <a href="mailto:im@caseys.tech?">open in mail</a>
+      <a href="mailto:im@casey.work?">open in mail</a>
 
       <textarea
         readOnly
         ref={textAreaRef}
-        value="im@caseys.tech"
+        value="im@casey.work"
         className="hide"
       ></textarea>
     </div>
