@@ -7,7 +7,7 @@ function Contact() {
   return (
     <section id="contact">
       <div className="section-container">
-        <Heading heading="Contact me" tagLine="im@caseys.tech" />
+        <Heading heading="Contact me" tagLine="im@casey.work" />
         <EmailLinks />
         <ContactForm />
       </div>
