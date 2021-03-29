@@ -8,7 +8,7 @@
         .switch 
           .slider 
             // background-color: darken($border,10%)
-            background-color: lighten($bg,6%)
+            background-color: $bg
             &:before 
               background-color: $accent-one  
         a 
@@ -22,6 +22,8 @@
           color: $accent-one    
         span 
           color: $accent-two
+        p
+          color: lighten($accent-two, 8%)
       span 
         color: lighten($accent-two, 8%)
       
@@ -40,7 +42,7 @@
       .block-container
         border: 4px solid $section
         .head
-          background-color: lighten($section, 5%)
+          background-color: $section
           .heading-text
             h2
               color: $accent-one
@@ -63,7 +65,7 @@
           background-color: $section
         .text-container
           .text
-            background-color: lighten($section, 5% )
+            background-color: $section
             &::-webkit-scrollbar 
               width: 6px
               background-color: $section        
@@ -72,7 +74,7 @@
             &::-webkit-scrollbar-corner
               background-color: $section
             p
-              color: lighten($accent-two, 13%)
+              color: lighten($accent-one, 20%)
 
       .form-container 
         .info-text 
@@ -115,7 +117,7 @@
         
         .switch 
           .slider 
-            background-color: $bg-light
+            background-color: darken($bg-light,10%)
             &:before 
               background-color: $accent-one-light
         a 
@@ -131,7 +133,7 @@
           color: $accent-two-light
       span 
 
-        color: lighten($accent-two-light, 8%)
+        color: darken($accent-two-light, 8%)
       
       .email-link-container
         .copy-email,a
@@ -150,7 +152,7 @@
       .block-container
         border: 4px solid $section-light
         .head
-          background-color: lighten($bg-light, 15%)
+          background-color: $section-light
           .heading-text
             h2
               color: $accent-one-light
@@ -159,7 +161,7 @@
             h4
               color: $accent-two-light
             span
-              color: $accent-two-light
+              color: lighten($accent-two-light, 8%)
 
         .link-container
           a
@@ -173,7 +175,7 @@
           background-color: $section-light
         .text-container
           .text
-            background-color: darken( $section-light, 3%)        
+            background-color: $section-light       
             &::-webkit-scrollbar 
               width: 6px
               background-color: $section-light        
